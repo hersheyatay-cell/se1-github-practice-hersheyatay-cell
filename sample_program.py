@@ -5,10 +5,16 @@
 
 def display_attendance(records):
     """Display student attendance records and a summary."""
+
+    print("=== Classroom Attendance System ===")
+
+    if not records:
+        print("No attendance records available.")
+        return
+
     present_count = 0
     absent_count = 0
 
-    print("=== Classroom Attendance System ===")
     print()
 
     for student in records:
